@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260">
+
+  <!-- ── CRESTA ────────────────────────────────────────────────────── -->
+
+  <!-- punta sinistra: e -->
+  <polygon points="65,133 88,133 68,52" fill="#1E8449"/>
+
+  <!-- punta centrale: ⊢ — la più alta -->
+  <polygon points="89,128 111,128 100,18" fill="#58D68D"/>
+
+  <!-- punta destra: τ -->
+  <polygon points="112,133 135,133 132,52" fill="#1E8449"/>
+
+  <!-- simboli nelle punte -->
+  <text x="74"  y="104" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="15" font-style="italic" font-weight="bold" fill="#EAFAF1">e</text>
+  <text x="100" y="88"  text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="13" font-weight="bold" fill="#1A2E22">⊢</text>
+  <text x="126" y="104" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif"
+        font-size="16" font-weight="bold" fill="#EAFAF1">τ</text>
+
+  <!-- ── TESTA ─────────────────────────────────────────────────────── -->
+  <circle cx="100" cy="143" r="28" fill="#117A65"/>
+
+  <!-- bargigli -->
+  <ellipse cx="108" cy="159" rx="7" ry="11" fill="#0E6655"/>
+
+  <!-- occhio — quasi nascosto dalla cresta -->
+  <circle cx="89" cy="134" r="5"  fill="#0A2E24"/>
+  <circle cx="88" cy="133" r="2"  fill="#FFFFFF"/>
+
+  <!-- becco -->
+  <polygon points="113,137 129,143 113,149" fill="#D4AC0D"/>
+
+  <!-- ── CORPO ──────────────────────────────────────────────────────── -->
+  <polygon points="55,160 145,160 150,215 50,215" fill="#117A65"/>
+
+  <!-- dettaglio ala -->
+  <polygon points="68,168 132,168 136,207 64,207" fill="#0E6655"/>
+
+  <!-- ── ZAMPE ──────────────────────────────────────────────────────── -->
+  <rect x="76"  y="215" width="13" height="20" rx="2" fill="#D4AC0D"/>
+  <rect x="111" y="215" width="13" height="20" rx="2" fill="#D4AC0D"/>
+
+  <!-- ── PIEDI ──────────────────────────────────────────────────────── -->
+  <line x1="65" y1="234" x2="89"  y2="234" stroke="#D4AC0D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="76" y1="234" x2="71"  y2="242" stroke="#D4AC0D" stroke-width="3" stroke-linecap="round"/>
+  <line x1="111" y1="234" x2="135" y2="234" stroke="#D4AC0D" stroke-width="4" stroke-linecap="round"/>
+  <line x1="124" y1="234" x2="129" y2="242" stroke="#D4AC0D" stroke-width="3" stroke-linecap="round"/>
+
+</svg>

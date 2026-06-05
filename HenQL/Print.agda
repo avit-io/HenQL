@@ -1,3 +1,5 @@
+{-# OPTIONS --safe --without-K #-}
+
 module HenQL.Print where
 
 open import Prometea.Core

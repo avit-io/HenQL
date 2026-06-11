@@ -15,8 +15,10 @@ private
   commas (x ∷ y ∷ t) = x ++ ", " ++ commas (y ∷ t)
 
   opSym : MatchOp → String
-  opSym meq    = "="
-  opSym mregex = "=~"
+  opSym meq     = "="
+  opSym mregex  = "=~"
+  opSym mneq    = "!="
+  opSym mnregex = "!~"
 
   prettyMatcher : {M : Model} → Matcher M → String
   prettyMatcher m =

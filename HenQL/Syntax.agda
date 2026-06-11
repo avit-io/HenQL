@@ -11,15 +11,20 @@ open import Data.List   using (List)
 -- ║  Label matchers per i selettori PromQL: {Label=Value, …}.          ║
 -- ║                                                                    ║
 -- ║  Le label PromQL sono APERTE (nessuno schema): qui non c'è prova   ║
--- ║  di esistenza, solo un AST ben formato. Due operatori:             ║
--- ║   • meq    →  `=`   (uguaglianza esatta);                          ║
--- ║   • mregex →  `=~`  (regex). Grafana interpola le variabili multi  ║
+-- ║  di esistenza, solo un AST ben formato. Quattro operatori:         ║
+-- ║   • meq     →  `=`   (uguaglianza esatta);                         ║
+-- ║   • mregex  →  `=~`  (regex). Grafana interpola le variabili multi ║
 -- ║                       come alternanza `v1|v2`, che con `=~` resta  ║
--- ║                       fedelmente "uno di {v1, v2}".                ║
+-- ║                       fedelmente "uno di {v1, v2}";                ║
+-- ║   • mneq    →  `!=`  (negazione esatta);                           ║
+-- ║   • mnregex →  `!~`  (negazione regex — es. escludere job tecnici  ║
+-- ║                       o branch dal denominatore di uno SLI).       ║
 -- ╚════════════════════════════════════════════════════════════════════╝
 data MatchOp : Set where
-  meq    : MatchOp
-  mregex : MatchOp
+  meq     : MatchOp
+  mregex  : MatchOp
+  mneq    : MatchOp
+  mnregex : MatchOp
 
 record Matcher (M : Model) : Set where
   constructor mkMatcher
